@@ -1,0 +1,709 @@
+.button {
+  background-color: var(--green-light);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--green);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Page Home */
+
+.background {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(10deg, rgb(211, 211, 211) 0%, rgb(234, 234, 234) 100%);
+  display: flex;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background .bg-line-left,
+.background .bg-line-right {
+  width: 200px;
+  height: 200%;
+  background: linear-gradient(10deg, rgb(88, 106, 64) 0%, rgb(119, 135, 44) 100%);
+  transform: rotate(30deg) translateY(-20%);
+}
+
+.background .bg-line-left {
+}
+
+.background .bg-line-right {
+  width: 100px;
+  position: absolute;
+  right: 60px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 30px;
+  overflow: auto;
+}
+
+.home-container .header {
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .home-container {
+    padding: 15px;
+    padding-top: 100%;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .home-container {
+    padding-top: 15%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .home-container {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding-top: 78%;
+  }
+}
+
+.home-container-box {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1200px;
+  min-height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container-box {
+    padding: 15px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo img {
+    height: 20px;
+  }
+}
+
+.header .logo span {
+  font-size: 14px;
+  color: var(--light);
+  margin-top: 5px;
+  letter-spacing: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo span {
+    letter-spacing: 0;
+    font-size: 12px;
+  }
+}
+
+.header .nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header .nav a {
+  transition: color 0.3s ease-in-out;
+}
+
+.header .nav a:hover {
+  color: var(--light);
+}
+
+@media screen and (max-width: 768px) {
+  .header .nav {
+    font-size: 13px;
+  }
+}
+
+.home-main {
+  margin-top: 30px;
+  color: var(--light);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-main {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.home-main .text-area,
+.home-main .img-area {
+  flex: 1;
+}
+
+.home-main .text-area h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.15rem;
+  color: var(--green);
+}
+
+.home-main .text-area p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.home-main .text-area .button {
+  margin-top: 15px;
+}
+
+.home-main .img-area {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Page Sliders */
+.page-container {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    margin-top: 30px;
+  }
+}
+
+.page-sliders .container .slide-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-sliders .container .slide-area {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Page Sliders - Slide Area Left */
+
+.page-sliders .container .slide-area-left {
+  flex: 1;
+}
+
+.page-sliders .container .slide-area-left .slide-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.page-sliders .container .slide-area-left .info-bar {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-sliders .container .slide-area-left .info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.page-sliders .container .slide-area-left .info-bar .info-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-sliders .container .slide-area-left .info-bar .info-bar-left .info-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.page-sliders .container .slide-area-left .info-bar .info-bar-left .icon {
+}
+
+.page-sliders .container .info-bar .info-bar-left .info-text {
+  margin-top: -2px;
+}
+
+.page-sliders .container .slide-area-left .info-bar .info-bar-right {
+}
+
+.page-sliders .container .slide-area-left .info-bar .info-bar-right .stars {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.page-sliders .container .slide-area-left .slide-description {
+  margin-top: 30px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.page-sliders .container .slide-area-left .buttons-of-slide {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.page-sliders .container .slide-area-left .buttons-of-slide .button-of-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.page-sliders .container .slide-area-left .buttons-of-slide .button-of-slide .icon {
+  color: var(--dark);
+}
+
+/* Page Sliders - Slide Area Right */
+.page-sliders .container .slide-area-right {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Page Sliders - Recipe Area */
+.recipe-area {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-area {
+    flex-direction: column;
+  }
+}
+
+/* Page Sliders - Recipe Area - Left */
+
+.recipe-area .recipe-area-left {
+  background-color: #e5eee8;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-area .recipe-area-left {
+    padding: 20px;
+  }
+}
+
+.recipe-area .recipe-area-left .recipe-calculator {
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-area .recipe-area-left .recipe-calculator .title {
+    font-size: 18px;
+  }
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator {
+  margin-top: 15px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .portion-calculator-container {
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .decrease,
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .increase {
+  width: 25px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 100;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .decrease:hover,
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .increase:hover {
+  background-color: #dddddd;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .decrease {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .increase {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .portion-calculator .portion-number {
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks {
+  margin-top: 40px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-checks-container {
+  border: 1px solid #b3c8bb;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-checks-container:has(li:nth-child(2)) li:not(:last-child) {
+  border-bottom: 1px solid #dddddd;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-check label {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-check label .text {
+}
+
+.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-check label .input-checbox {
+}
+
+/* Page Sliders - Recipe Area - Right */
+.recipe-area .recipe-area-right {
+  flex: 0.6;
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .recipe-area .recipe-area-right {
+    padding: 0px;
+  }
+}
+
+.recipe-area .recipe-area-right .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.recipe-area .recipe-area-right .recipe-desc-area {
+  margin-top: 30px;
+}
+
+.recipe-area .recipe-area-right .recipe-desc-area .recipe-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recipe-area .recipe-area-right .recipe-desc-area .recipe-description {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.recipe-area .recipe-area-right .recipe-desc-area .recipe-steps {
+  font-weight: 300;
+}
+
+.recipe-area .recipe-area-right .recipe-desc-area .recipe-steps .recipe-step {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.recipe-area .recipe-area-right .recipe-table {
+  margin-top: 50px;
+}
+
+.recipe-area .recipe-area-right .recipe-table-description {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--light);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Page Order */
+.page-order {
+}
+
+.page-order .container {
+  max-width: 900px;
+}
+
+.page-order .order-area {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order .order-area {
+    flex-direction: column;
+  }
+}
+
+.page-order .title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: var(--green);
+  text-align: center;
+}
+
+/* Page Order - Summary Area */
+.page-order .order-area .order-summary-area {
+  border-radius: 12px;
+  border: 1px solid #b3c8bb;
+  padding: 30px 24px;
+  flex: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order .order-area .order-summary-area {
+    padding: 20px 15px;
+  }
+}
+
+.page-order .order-area .order-summary-area .order-summary-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #b3c8bb;
+}
+
+.page-order .order-area .order-summary-area .order-summary-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page-order .order-area .order-summary-area .order-summary-content .order-summary-text {
+  color: var(--light);
+  font-weight: 300;
+}
+
+.page-order .order-area .order-summary-area .order-summary-content .order-summary-price {
+  color: var(--green-light);
+  font-weight: 300;
+}
+
+/* Page Order - Info Area */
+
+.page-order .order-area .order-info-area {
+  flex: 0.5;
+  border-radius: 12px;
+  border: 1px solid #b3c8bb;
+  padding: 30px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order .order-area .order-info-area {
+    padding: 20px 15px;
+  }
+}
+
+.page-order .order-area .order-info-area .order-info-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #b3c8bb;
+}
+
+.page-order .order-area .order-info-area .order-form-input {
+  margin-bottom: 14px;
+}
+.page-order .order-area .order-info-area .order-form-input input {
+  width: 100%;
+  padding: 7px 7px;
+  border-radius: 4px;
+  border: 1;
+  border: 1px solid #c0c0c0;
+  font-size: 16px;
+}
+.page-order .order-area .order-form-input-title {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.page-order .order-area .order-form-selects {
+  display: flex;
+  gap: 20px;
+}
+
+.page-order .order-area .order-form-selects .order-form-select {
+  flex: 0.5;
+}
+
+.page-order .order-area .order-form-selects .order-form-select select {
+  width: 100%;
+  padding: 10px 7px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.page-order .order-area .order-form-selects .order-form-select select option {
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.page-order .order-area .button {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* Page Order Summary */
+.page-order-summary {
+}
+
+.page-order-summary .container {
+  max-width: 900px;
+}
+
+.page-order-summary .order-summary-area {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order-summary .order-summary-area {
+    flex-direction: column;
+  }
+}
+
+.page-order-summary .title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: var(--green);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order-summary .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.page-order-summary .order-summary-area .left,
+.page-order-summary .order-summary-area .right {
+  flex: 0.5;
+  border-radius: 12px;
+  border: 1px solid #b3c8bb;
+  padding: 30px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-order-summary .order-summary-area .left,
+  .page-order-summary .order-summary-area .right {
+    padding: 20px 15px;
+  }
+}
+
+.page-order-summary .order-summary-area .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.page-order-summary .order-summary-area .description {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.page-order-summary .order-summary-area .description span {
+  font-style: italic;
+  font-weight: 500;
+}
