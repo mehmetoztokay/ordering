@@ -236,6 +236,12 @@
   color: var(--green);
 }
 
+@media screen and (max-width: 768px) {
+  .page-sliders .container .slide-area-left .slide-title {
+    font-size: 35px;
+  }
+}
+
 .page-sliders .container .slide-area-left .info-bar {
   display: flex;
   align-items: center;
