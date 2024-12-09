@@ -86,7 +86,7 @@
 @media screen and (max-width: 576px) {
   .home-container {
     padding: 5px;
-    padding-top: 150%;
+    padding-top: 120%;
   }
 }
 
@@ -210,8 +210,14 @@
 }
 
 .home-main .img-area {
-  border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main .img-area img {
+  width: 150%;
+  max-width: 150%;
 }
 
 /* Page Sliders */
