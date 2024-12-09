@@ -148,7 +148,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--text);
   line-height: 1.2;
   height: 100%;
@@ -163,30 +163,4 @@ img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-/* Custom Table */
-.recipe-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-.recipe-table thead {
-  background-color: black;
-  color: white;
-}
-
-.recipe-table tbody tr:nth-child(odd) {
-  background-color: white;
-}
-
-.recipe-table tbody tr:nth-child(even) {
-  background-color: #f0f0f0;
-}
-
-.recipe-table td,
-th {
-  padding: 8px;
-  border: 1px solid #ddd;
 }
