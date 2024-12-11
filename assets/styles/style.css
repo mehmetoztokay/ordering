@@ -4,12 +4,14 @@
 /* Importing Montserrat font */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Alfa Slab fontunu ekledim */
 .alfa-slab-one-regular {
   font-family: 'Alfa Slab One', serif;
   font-weight: 400 !important;
   font-style: normal;
 }
 
+/* Standart buton yapisini duzenledim */
 .button {
   background-color: var(--green-light);
   padding: 10px 20px;
@@ -22,10 +24,12 @@
   text-align: center;
 }
 
+/* Buton hover ozelligini ekledim */
 .button:hover {
   background-color: var(--green);
 }
 
+/* Tasarim alaninin sinirlarini belirledim */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -34,7 +38,7 @@
 }
 
 /* Page Home */
-
+/* Akaplandaki yesil cizgiyi ekledim */
 .background {
   width: 100%;
   min-height: 100%;
@@ -54,15 +58,13 @@
   transform: rotate(30deg) translateY(-20%);
 }
 
-.background .bg-line-left {
-}
-
 .background .bg-line-right {
   width: 100px;
   position: absolute;
   right: 60px;
 }
 
+/* Ana sayfadaki kutu sayfa alani */
 .home-container {
   display: flex;
   justify-content: center;
@@ -78,6 +80,7 @@
   padding: 30px 0;
 }
 
+/* Ana sayfadaki beyaz kutu alani */
 .home-container-box {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -90,12 +93,15 @@
   min-height: 90%;
 }
 
+/* Ana sayfadaki beyaz kutu alaninin padingini mobilde dusurdum */
+/* Responsive kodunu W3Schoools'tan aldim, Kaynak: https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
 @media screen and (max-width: 768px) {
   .home-container-box {
     padding: 15px;
   }
 }
 
+/* Ana sayfa beyaz kutudaki header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -122,14 +128,17 @@
   }
 }
 
+/* Header logo altindaki slogan yazisi (Enkelt og Efektiv) */
 .header .logo span {
   font-size: 14px;
   color: var(--light);
   margin-top: 5px;
   letter-spacing: 0.25rem;
+  /* Yazinin kaymasini engellemek icin ekledim */
   text-wrap-mode: nowrap;
 }
 
+/* Header logo altindaki slogan yazisini mobilde kuculttum */
 @media screen and (max-width: 768px) {
   .header .logo span {
     font-size: 14px;
@@ -137,6 +146,7 @@
   }
 }
 
+/* Headerdaki link alani */
 .header .nav {
   display: flex;
   gap: 15px;
@@ -144,6 +154,7 @@
   flex-wrap: wrap;
 }
 
+/* Headerdaki link */
 .header .nav a {
   border-radius: 8px;
   color: var(--green);
@@ -202,6 +213,7 @@
   }
 }
 
+/* Ana sayfadaki kitaplik alani */
 .home-main {
   margin-top: 30px;
   color: var(--light);
@@ -224,6 +236,7 @@
   flex: 1;
 }
 
+/* Ana sayfadaki kitaplik alan basligi */
 .home-main .text-area h1 {
   font-size: 30px;
   font-weight: 400;
@@ -233,6 +246,7 @@
   font-weight: 600;
 }
 
+/* Ana sayfadaki kitaplik alan paragrafi */
 .home-main .text-area p {
   font-size: 16px;
   line-height: 1.4;
@@ -242,6 +256,7 @@
   font-weight: 400;
 }
 
+/* Ana sayfadaki kitaplik alan butonu */
 .home-main .text-area .button {
   margin-top: 15px;
 }
@@ -257,6 +272,7 @@
   max-width: 150%;
 }
 
+/* Ana sayfadaki tarifler */
 .home-slides {
   display: flex;
   gap: 30px;
@@ -307,10 +323,10 @@
 
 .home-slides .home-slide .stars-area .star-description {
   font-size: 12px;
-  margin-top: -3px;
+  margin-top: -2px;
 }
 
-/* Page Sliders */
+/* Tarif sayfasi */
 .page-container {
   margin-top: 100px;
   padding-bottom: 100px;
@@ -322,6 +338,7 @@
   }
 }
 
+/* Tarif sayfasi ust kisim (resimli ve yazili) */
 .page-sliders .container .slide-area {
   display: flex;
   align-items: center;
@@ -334,7 +351,7 @@
   }
 }
 
-/* Page Sliders - Slide Area Left */
+/* Tarif sayfasi ust kisim (yazili alan) */
 
 .page-sliders .container .slide-area-left {
   flex: 1;
@@ -352,6 +369,7 @@
   }
 }
 
+/* 1 TIME 5 MIN, FRYSEEGNET (192) ve Kommentarer ikon alani */
 .page-sliders .container .slide-area-left .info-bar {
   display: flex;
   align-items: center;
@@ -380,14 +398,8 @@
   align-items: center;
 }
 
-.page-sliders .container .slide-area-left .info-bar .info-bar-left .icon {
-}
-
 .page-sliders .container .info-bar .info-bar-left .info-text {
   margin-top: -2px;
-}
-
-.page-sliders .container .slide-area-left .info-bar .info-bar-right {
 }
 
 .page-sliders .container .slide-area-left .info-bar .info-bar-right .stars {
@@ -396,6 +408,7 @@
   align-items: center;
 }
 
+/* Tarif sayfasi ust kisim paragraf */
 .page-sliders .container .slide-area-left .slide-description {
   margin-top: 30px;
   line-height: 1.4;
@@ -403,6 +416,7 @@
   font-weight: 300;
 }
 
+/* GEM, TILFØJ TIL INDKØSLISTE, DEL ve PRINT ikonlari */
 .page-sliders .container .slide-area-left .buttons-of-slide {
   display: flex;
   align-items: center;
@@ -424,14 +438,14 @@
   color: var(--dark);
 }
 
-/* Page Sliders - Slide Area Right */
+/* Tarif sayfasi ust kisim (resimli alan) */
 .page-sliders .container .slide-area-right {
   flex: 1;
   border-radius: 16px;
   overflow: hidden;
 }
 
-/* Page Sliders - Recipe Area */
+/* Tarif sayfasi tarif alani */
 .recipe-area {
   display: flex;
   gap: 30px;
@@ -444,8 +458,7 @@
   }
 }
 
-/* Page Sliders - Recipe Area - Left */
-
+/* Tarif sayfasi tarif check in alani */
 .recipe-area .recipe-area-left {
   background-color: #f4f4f4;
   border-radius: 12px;
@@ -459,9 +472,7 @@
   }
 }
 
-.recipe-area .recipe-area-left .recipe-calculator {
-}
-
+/* Tarif sayfasi tarif check in alani basligi */
 .recipe-area .recipe-area-left .recipe-calculator .title {
   font-size: 24px;
   font-weight: 600;
@@ -473,6 +484,8 @@
   }
 }
 
+/* Tarif sayfasindaki porsiyon/kisi hesaplama butonu */
+/* Ingredienser alani basladi */
 .recipe-area .recipe-area-left .recipe-calculator .portion-calculator {
   margin-top: 15px;
   display: flex;
@@ -558,13 +571,8 @@
   padding: 14px 20px;
 }
 
-.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-check label .text {
-}
-
-.recipe-area .recipe-area-left .recipe-calculator .recipe-checks .recipe-check label .input-checbox {
-}
-
-/* Page Sliders - Recipe Area - Right */
+/* Ingredienser alani bitti */
+/* Sådan gør du alani basladi */
 .recipe-area .recipe-area-right {
   flex: 0.6;
   padding: 30px;
@@ -640,274 +648,4 @@
   border-radius: 10px;
 }
 
-.recipe-area .recipe-area-right .recipe-table-description {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--light);
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-/* Page Order */
-.page-order {
-}
-
-.page-order .container {
-  /* max-width: 900px; */
-}
-
-.page-order .order-area {
-  display: flex;
-  gap: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order .order-area {
-    flex-direction: column;
-  }
-}
-
-.page-order .title {
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 35px;
-  color: var(--green);
-  text-align: center;
-}
-
-/* Page Order - Summary Area */
-.page-order .order-area .order-summary-area {
-  border-radius: 12px;
-  border: 1px solid #b3c8bb;
-  padding: 30px 24px;
-  flex: 0.6;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order .order-area .order-summary-area {
-    padding: 20px 15px;
-  }
-}
-
-.page-order .order-area .order-summary-area .order-summary-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #b3c8bb;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content-box {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 576px) {
-  .page-order .order-area .order-summary-area .order-summary-content-box {
-    flex-direction: column;
-  }
-}
-
-.page-order .order-area .order-summary-area .order-summary-content-box .img-area {
-  flex: 0.3;
-  text-align: center;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content-box .img-area img {
-  width: 100%;
-  max-width: 200px;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 12px;
-  flex: 0.7;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content .title {
-  font-weight: 500;
-  font-size: 14px;
-  color: var(--dark);
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content .order-summary-text {
-  color: var(--light);
-  font-weight: 300;
-}
-
-.page-order .order-area .order-summary-area .order-summary-content .order-summary-price {
-  color: var(--green-light);
-  font-weight: 300;
-}
-
-.page-order .order-area .order-summary-area .order-summary-count-area {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.page-order .order-area .order-summary-area .order-summary-count-area .text {
-  font-weight: 600;
-  display: flex;
-}
-
-.page-order .order-area .order-summary-area .order-summary-count-area .text span {
-  color: var(--light);
-  font-weight: 300;
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 576px) {
-  .page-order .order-area .order-summary-area .order-summary-count-area .text {
-    flex-direction: column;
-  }
-
-  .page-order .order-area .order-summary-area .order-summary-count-area .text span {
-    padding-left: 0;
-  }
-}
-
-.page-order .order-area .order-summary-area .order-summary-count-area .order-summary-counter {
-  display: flex;
-  gap: 10px;
-}
-
-/* Page Order - Info Area */
-
-.page-order .order-area .order-info-area {
-  flex: 0.4;
-  border-radius: 12px;
-  border: 1px solid #b3c8bb;
-  padding: 30px 24px;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order .order-area .order-info-area {
-    padding: 20px 15px;
-  }
-}
-
-.page-order .order-area .order-info-area .order-info-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #b3c8bb;
-}
-
-.page-order .order-area .order-info-area .order-form-input {
-  margin-bottom: 14px;
-}
-.page-order .order-area .order-info-area .order-form-input input {
-  width: 100%;
-  padding: 7px 7px;
-  border-radius: 4px;
-  border: 1;
-  border: 1px solid #c0c0c0;
-  font-size: 16px;
-}
-.page-order .order-area .order-form-input-title {
-  font-size: 13px;
-  margin-bottom: 3px;
-}
-
-.page-order .order-area .order-form-selects {
-  display: flex;
-  gap: 20px;
-}
-
-.page-order .order-area .order-form-selects .order-form-select {
-  flex: 0.5;
-}
-
-.page-order .order-area .order-form-selects .order-form-select select {
-  width: 100%;
-  padding: 10px 7px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.page-order .order-area .order-form-selects .order-form-select select option {
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.page-order .order-area .button {
-  margin-top: 30px;
-}
-
-/* Page Order Summary */
-.page-order-summary {
-}
-
-.page-order-summary .container {
-  max-width: 900px;
-}
-
-.page-order-summary .order-summary-area {
-  display: flex;
-  gap: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order-summary .order-summary-area {
-    flex-direction: column;
-  }
-}
-
-.page-order-summary .title {
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 35px;
-  color: var(--green);
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order-summary .title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-}
-
-.page-order-summary .order-summary-area .left,
-.page-order-summary .order-summary-area .right {
-  flex: 0.5;
-  border-radius: 12px;
-  border: 1px solid #b3c8bb;
-  padding: 30px 24px;
-}
-
-@media screen and (max-width: 768px) {
-  .page-order-summary .order-summary-area .left,
-  .page-order-summary .order-summary-area .right {
-    padding: 20px 15px;
-  }
-}
-
-.page-order-summary .order-summary-area .title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 18px;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.page-order-summary .order-summary-area .description {
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 8px;
-}
-
-.page-order-summary .order-summary-area .description span {
-  font-style: italic;
-  font-weight: 500;
-}
+/* Sådan gør du alani bitti */

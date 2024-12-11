@@ -1,3 +1,11 @@
+/* Css standartlarini blokladik, tarayici standartina gore degil kendi tasarimima gore kodlamak icin ekledim. Kaynak: https://meyerweb.com/eric/tools/css/reset/ */
+
+/* Gordugum kaynak: https://www.youtube.com/watch?v=AWUeUEBIikY */
+
+/* Not alma kisayolu: cmd k c */
+/* Notu koda cevirme cmd k u */
+
+/* Resetleme kodlarinin tamami */
 *,
 *::before,
 *::after {
@@ -128,32 +136,6 @@ table {
   border-spacing: 0;
 }
 
-button {
-  border: 0;
-  background: transparent;
-  line-height: 1;
-  cursor: pointer;
-}
-
-/* Custom Css */
-:root {
-  --green: #546642;
-  --green-light: #77882b;
-  --dark: #252329;
-  --light: #8d8896;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--text);
-  line-height: 1.2;
-  min-height: 100%;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -163,4 +145,33 @@ img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+html {
+  height: 100%;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Kendi kodlarim */
+
+/* Renk degerlerini olusturdum */
+:root {
+  --green: #546642;
+  --green-light: #77882b;
+  --dark: #252329;
+  --light: #8d8896;
+}
+
+/* Standart font yapisini duzenledim */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  line-height: 1.2;
+  min-height: 100%;
 }
